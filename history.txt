@@ -2,6 +2,14 @@
 Setting user and user's e-mail
 git config --global user.name "Alex Skurlov RasPi-Inselnetz"
 git config --global user.email "alexskurlov@gmail.com"
+Initializing an empty repository:
+/home/pi/Inselnetz $ git init
+Setting up files to ignore by th Git Version-Control Tracking:
+/home/pi/Inselnetz/.gitignore
+Adding files to the Version-Control tracking
+/home/pi/Inselnetz $ git add *.py *.txt *.sh
+Adding remote 
+/home/pi/Inselnetz $ git remote add origin https://github.com/alesku/inselnetz-pi.git
 
 22.10.2016 09:14
 Mittels crontab -e wird nach dem rebootvorgang ein launch.sh gestartet. Unter den Benutzer 'pi' kann man anschauen, welche Skripten werden während nach dem reboot gestartet: crontab -l
