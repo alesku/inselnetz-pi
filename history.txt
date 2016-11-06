@@ -1,3 +1,6 @@
+06.11.2016 19:41
+Testing connection
+
 06.11.2016 14:02 Setting Git
 Setting user and user's e-mail
 git config --global user.name "Alex Skurlov RasPi-Inselnetz"
