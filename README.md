@@ -1,10 +1,10 @@
 # inselnetz-pi
 
 Master-Thesis Thema:
-Deutsch: Prozessinformationssystem für ein regeneratives Inselnetz
-Englisch: Information processing for a renewable off-grid system
-Russisch: Визуализация процессов в энергонезависимой электросети
-Ukrainisch: Візуалізація процесів в енергонезалежній електромережі
+Deutsch: Prozessinformationssystem für ein regeneratives Inselnetz.
+Englisch: Information processing for a renewable off-grid system.
+Russisch: Визуализация процессов в энергонезависимой электросети.
+Ukrainisch: Візуалізація процесів в енергонезалежній електромережі.
 
 Kurze beschreibung:
 Die vorliegende Arbeit konzentriert sich auf die Sammlung und die Darstellung der kern-Werten
