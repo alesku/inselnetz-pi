@@ -1,0 +1,5 @@
+# Version Control System "Git" should track only files that needed to be tracked in the Project. 
+# Files that will be tracked: *.py (Python Skripts) *.txt(Beschreibungen) *.sh (Debian Skripts)
+# Files we do not need to track: *.csv (Data Files), *.log (Log Files)
+*.csv
+*.log
