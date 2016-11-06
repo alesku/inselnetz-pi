@@ -1,0 +1,62 @@
+06.11.2016 14:02 Setting Git
+Setting user and user's e-mail
+git config --global user.name "Alex Skurlov RasPi-Inselnetz"
+git config --global user.email "alexskurlov@gmail.com"
+
+22.10.2016 09:14
+Mittels crontab -e wird nach dem rebootvorgang ein launch.sh gestartet. Unter den Benutzer 'pi' kann man anschauen, welche Skripten werden während nach dem reboot gestartet: crontab -l
+
+21.10.2016 16:57 Statische IP
+Statische IP 192.168.20.240 wird eingerichtet. Mit SSH braucht man Passwort "raspberry".
+
+21.10.2016 16:45 SAMBA
+Wird SAMBA installiert. Ist benötigt um mit Windows-Rechner zu kommunizieren.
+$ sudo apt-get install samba
+
+20.10.2016 15:05 VNC
+Wird ein VNC-server installiert. Zugang durch 192.168.20.240:1
+Passwort: musson44
+
+20.10.2016 13:52 RAID-1
+Wird ein RAID-1 eingerichtet. 2x32Gb Speicherkarten werden parallel geschaltet um die Daten zu speichern. RAID-1 wird an /home/pi/Inselnetz montiert mit entsprechenden Rechten. Beim Problemen mit dem RAID schickt mdadm ein E-Mail an alexskurlov@gmail.com (es kann nur eine einzige E-Mail addresse gewählt werden)
+
+18.10.2016 13:52 Ordnerstruktur
+Структура папок проста: в главной папке находятся подпапки с именами приборов. 
+Eine Ordnerbaum wird erstellt um ein Platz für Python-Skripte, Dateien, Logs zu sichern. Das Projekt "Inselnetz" befindet sich im Ordner "/home/pi/Inselnetz".  Die Einrichtung der Ordner ermöglicht auch Sicheung und Version Control des Projekts mittels Git. Git ist eine Version Control Platform. Um die Geschwindigkeit zu verbessern es werden folgende Dateien periodisch synchronisiert: Ornder und Python-Skripts. Es werden keine Logs-und csv Dateien synchronisiert - Git ist gedacht um Bugs tu tracken und Programmierung zu verbessern.
+
+17.10.2016 19:12 
+Wird ein Python-Modul installiert, der mit MySQL arbeitet. Der Modul wird in Python-Skripten benutzt als "import MySQLdb"
+sudo apt-get install python-MySQLdb
+
+17.10.2016 17:55 MySQL
+MySQL wird installiert. 89,4MB
+sudo apt-get install mysql-server mysql-client
+Passwort für Default-Benutzer: musson44
+
+17.10.2016 16:20 microSD Backup
+Ein Backup wird erstellt. inselnetz_image_2016-10-17_1620.img
+Der Image befindet sich in Home Ordner in ProBook 4540s (Ubuntu).
+Der Image wurde als testbackup durchgeführt.
+
+14.10.2016 14:04 Midnight Commander
+Midnight Commander wird installiert
+sudo apt-get install mc
+
+14.10.2016 11:13 Proxy
+	• Proxy wird für apt-get eingerichtet. 
+sudo nano /etc/apt/apt.conf.d/10proxy
+	• Proxy wird für web-browser eingerichtet.
+sudo nano /etc/profile.d/proxy.sh
+	• NTP-Zeitserver 
+sudo nano /etc/ntp.conf
+	• Updates und Upgrades werden durchgeführt.
+
+14.10.2016 11:00 Hostname änderung
+Hostname wird auf "inselnetz" geändert. Alte ssh schlüssel werden gelöscht, neue generiert.
+Default Benutzer: pi
+Passwort: raspberry
+VNC wird eingeschaltet. Für GPU wird 128Mb gegeben. Locale: Spache: German, Country: Germany. Sprache für Debian-Pakete: German
+
+14.10.2016 10:45 
+Auf die neue microSD-Karte SDSDQUN-008G,48MB/s,C10/U1 wird das Betriebssystem Raspbian Jessie with Pixel (Version: September 2016, Release Date: 2016-09-23, Kernel Version 4.4, 1.41Gb) geschrieben.
+Die Dateisystem ist automatisch resized.

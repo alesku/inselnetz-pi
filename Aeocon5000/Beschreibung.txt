@@ -1,0 +1,20 @@
+- Beschreibung.txt -
+In diesem Verzeichnis (/home/wind/Windlogging) befinden sich Daten, die zur Projektarbeit "Windlogging" gehören: Raspberry Pi sammelt Daten vom Wechselrichter Aeocon 5000, die werden bearbeitet und im Verzeichnis /home/wind/Windlogging/Daten gespeichert.
+--------------------
+
+Daten: 
+	* 3-Sekunden gemittelte Daten, 
+	* Tägliche, 
+	* Wochenliche, 
+	* Monatliche, 
+	* Jährliche Daten sind hier als .csv Datei gespeichert.
+
+logs: Ein Verzeichnis für Log-Files. Wird vom Programm "cron" erstellt. Das Programm speichert hier seine Logs. Wird auch als Lagerort für alle veraltete Dateien verwendet.
+
+aeocon_datalogger.py: das Programm, die Daten vom Wechselrichter Aeocon 5000 sammelt, verarbeitet und speichert. Das Programm startet sich automatisch mit jedem Rechnerneustart aus launcher.sh 
+
+launcher.sh:  wird am Autostart des Raspberry gestartet bei "cron".
+"cron" ist ein Programm, die beliebige Programme bei Rechnerneustart automatisch durchführt. "cron" wurde gewählt als einer der einfachten Weg, ein Program zum Autostart hinzugefügen. 
+Zum uberprüfen, ob das Programm "aeocon_datalogger.py" tatsächlich läuft, kann man ein Programm "htop" im Konsole starten. "htop" zeigt alle Prozesse, die auf dem Raspberry Pi laufen.
+
+Alex Skurlov, 18.03.2016
