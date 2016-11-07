@@ -4,6 +4,7 @@ Testing caching Git Credentials
 https://help.github.com/articles/caching-your-github-password-in-git/#platform-all
 Testing wincred
 Testing push from VS
+Checking integration Git and Visual Studio
 
 06.11.2016 14:02 Setting Git
 Setting user and user's e-mail
