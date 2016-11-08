@@ -13,6 +13,7 @@
 
 # Windlogging mit Aeocon 5000
 # Navigate to directory Aeocon5000, execute datalogger.py (python script), go back home
-cd /home/pi/Inselnetz/Aeocon5000/
-sudo python logger.py
+sudo python /home/pi/Inselnetz/Aeocon5000/logger.py
+cd /
+sudo python /home/pi/Inselnetz/FLEXmax60/MATE_logger.py
 cd /
