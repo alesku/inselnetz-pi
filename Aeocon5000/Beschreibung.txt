@@ -17,4 +17,4 @@ launcher.sh:  wird am Autostart des Raspberry gestartet bei "cron".
 "cron" ist ein Programm, die beliebige Programme bei Rechnerneustart automatisch durchführt. "cron" wurde gewählt als einer der einfachten Weg, ein Program zum Autostart hinzugefügen. 
 Zum uberprüfen, ob das Programm "aeocon_datalogger.py" tatsächlich läuft, kann man ein Programm "htop" im Konsole starten. "htop" zeigt alle Prozesse, die auf dem Raspberry Pi laufen.
 
-Alex Skurlov, 18.03.2016
+Alex Skurlov, 09.11.2016
